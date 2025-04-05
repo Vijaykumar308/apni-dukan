@@ -1,4 +1,15 @@
 .remove-bg {
     background-blend-mode: color-burn;
-    width: 90px;
+    width: 45px;
+}
+.container-box {
+    border-bottom:  2px solid black;
+    margin-bottom: 10px;
+}
+.nav-links {
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+}
+.nav-links:hover {
+    border-bottom: 2px solid  #E63600FF;
 }

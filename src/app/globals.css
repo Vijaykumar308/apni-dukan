@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+.jumbotorn-container {
+    width: 100vw;
+    height: 88vh;
+    background-color: rebeccapurple;
+}
+
+/* Button 15 */
