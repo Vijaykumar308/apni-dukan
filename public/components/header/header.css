@@ -1,0 +1,4 @@
+.remove-bg {
+    background-blend-mode: color-burn;
+    width: 90px;
+}
