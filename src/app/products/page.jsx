@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Products({ProductCard}) {
+function Products() {
   return (
     <div>
-        <ProductCard />
+      fsfsfds
     </div>
   )
 }
