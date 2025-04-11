@@ -1,11 +1,14 @@
+'use client';
+
 import Link from 'next/link'
 import React from 'react'
-import logo from "../../assets/logo.png";
-import Image from 'next/image';
 import "./header.css";
 import { ShoppingBag } from "lucide-react"
+import {usePathname } from 'next/navigation';
 
 function Header() {
+  const pathname = usePathname();
+
   return (
     <header className="w-full border-b">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
@@ -16,18 +19,18 @@ function Header() {
           <nav className="ml-5 hidden md:block">
             <ul className="flex space-x-8">
               <li className="relative">
-                <Link href="/" className="text-sm font-medium text-orange-600">
+                <Link href="/" className={` ${pathname === '/' ? 'active' : ''} text-sm font-medium`}>
                   Home
                 </Link>
-                <div className="absolute bottom-[-17px] left-0 h-[2px] w-full bg-orange-600"></div>
+                <div className="active"></div>
               </li>
               <li>
-                <Link href="/products" className="text-sm font-medium text-gray-600 hover:text-orange-600">
+                <Link href="/products" className={` ${pathname === '/products' ? 'active' : ''} text-sm font-medium text-gray-600 hover:text-orange-600`}>
                   Products
                 </Link>
               </li>
               <li>
-                <Link href="/orders" className="text-sm font-medium text-gray-600 hover:text-orange-600">
+                <Link href="/orders" className={`  ${pathname === '/orders' ? 'active' : ''} text-sm font-medium text-gray-600 hover:text-orange-600`}>
                   Orders
                 </Link>
               </li>

@@ -6,4 +6,6 @@
     background-color: rebeccapurple;
 }
 
-/* Button 15 */
+.active {
+    color: #ea580c;
+}
