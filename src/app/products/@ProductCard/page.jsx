@@ -10,13 +10,12 @@ const getProject = async () => {
 
 async function productCard() {
   const data = await getProject();
-  console.log(data);
 
   return (
     <div className='grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5'>
       {
         data.map((item, index) => (
-          <div key={index} className='card flex flex-col pb-5 rounded-md' style={{boxShadow: "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"}}>
+          <div key={index} className='card flex flex-col pb-5 rounded-md' style={{ boxShadow: "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px" }}>
             <div className='card_image flex justify-center items-center'>
               <Image src={item?.images.shift()} alt='addfds' width={200} height={200} />
             </div>
@@ -25,8 +24,8 @@ async function productCard() {
               <div className='py-3 text-md text-gray-600 font-semibold'>
                 <p>{item?.title}</p>
                 <p className='mt-4 font-light text-gray-600'>{item?.description?.length > 100
-    ? `${item.description.slice(0, 100)}...`
-    : item?.description}</p>
+                  ? `${item.description.slice(0, 100)}...`
+                  : item?.description}</p>
               </div>
 
               <div className='flex justify-between items-center pt-3'>
