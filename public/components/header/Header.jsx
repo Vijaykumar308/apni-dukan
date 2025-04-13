@@ -3,15 +3,15 @@
 import Link from 'next/link'
 import React from 'react'
 import "./header.css";
-import { ShoppingBag } from "lucide-react"
+import { ShoppingBag, ShoppingCart } from "lucide-react"
 import {usePathname } from 'next/navigation';
 
 function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="w-full border-b">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+    <header className="w-full border-b fixed bg-white">
+      <div className="container mx-auto flex h-16 items-center justify-between px-10">
         <div className="flex items-center gap-2">
           <ShoppingBag className="h-6 w-6 text-green-500" />
           <span className="text-lg font-bold">Apni Dukhan</span>
@@ -39,7 +39,7 @@ function Header() {
         </div>
 
 
-        <div className="flex items-center gap-3">
+        {/* <div className="flex items-center gap-3">
           <Link
             href="/signup"
             className="rounded-full border border-orange-500 px-4 py-1.5 text-sm font-medium text-orange-500 hover:bg-orange-50"
@@ -66,7 +66,7 @@ function Header() {
             </span>
           </Link>
           <Link
-            href="/signin"
+            href="/login"
             className="rounded-full bg-orange-600 px-4 py-1.5 text-sm font-medium text-white hover:bg-orange-700"
           >
             <span className="flex items-center gap-1">
@@ -89,6 +89,14 @@ function Header() {
               Sign In
             </span>
           </Link>
+        </div> */}
+
+        <div className=''>
+          <p className='cursor-pointer relative'>{<ShoppingCart />} 
+          {
+            <span className='absolute -top-[13px] left-[18px] bg-[#f54900] text-white rounded-full w-[22px] h-[22px] flex justify-center items-center text-[13px]'>0</span>
+          }
+          </p>
         </div>
       </div>
     </header>

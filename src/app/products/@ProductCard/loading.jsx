@@ -4,27 +4,27 @@ import "../@ProductCard/loadingCss.css";
 
 function ProductLoading() {
   return (
-    <div className='h-[calc(100vh-40px)] flex justify-center items-center'>
-      <div class="boxes">
-        <div class="box">
+    <div className='h-[calc(100vh-64px)] flex justify-center items-center'>
+      <div className="boxes">
+        <div className="box">
           <div></div>
           <div></div>
           <div></div>
           <div></div>
         </div>
-        <div class="box">
+        <div className="box">
           <div></div>
           <div></div>
           <div></div>
           <div></div>
         </div>
-        <div class="box">
+        <div className="box">
           <div></div>
           <div></div>
           <div></div>
           <div></div>
         </div>
-        <div class="box">
+        <div className="box">
           <div></div>
           <div></div>
           <div></div>
