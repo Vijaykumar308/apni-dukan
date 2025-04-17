@@ -1,10 +1,9 @@
 import React from 'react'
+import SearchInput from '../../../public/components/searchbar/SearchInput'
 
 function Products() {
   return (
-    <div>
-      dfdsfdsfdsfsds
-    </div>
+    <div> <SearchInput /> </div>
   )
 }
 

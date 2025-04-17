@@ -10,7 +10,7 @@ function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="w-full border-b fixed bg-white">
+    <header className="w-full border-b bg-white">
       <div className="container mx-auto flex h-16 items-center justify-between px-10">
         <div className="flex items-center gap-2">
           <ShoppingBag className="h-6 w-6 text-green-500" />
