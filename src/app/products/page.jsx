@@ -3,7 +3,7 @@ import SearchInput from '../../../public/components/searchbar/SearchInput'
 
 function Products() {
   return (
-    <div> <SearchInput /> </div>
+    <div className='mt-10 mx-10'> <SearchInput /> </div>
   )
 }
 
