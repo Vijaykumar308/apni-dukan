@@ -16,8 +16,7 @@ function ProductCard({ searchTerm }) {
     getProducts();
   }, []);
 
-  console.log(products);
-
+  // for exect match;
   const filteredProducts = products.filter(product =>
     product?.title?.toLowerCase().includes(searchTerm?.toLowerCase())
   );
