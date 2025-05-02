@@ -1,10 +1,16 @@
+'use client';
 import React from "react";
 import "./searchInput.css";
 
-function SearchInput() {
+function SearchInput({setSearchTerm}) {
+
+  const handleChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
   return (
     <div className="">
-      <input class="input" className="w-full" name="text" placeholder="Search..." type="search" />
+      <input className="w-full input" name="text" placeholder="Search..." type="search" onChange={handleChange} />
     </div>
   );
 }

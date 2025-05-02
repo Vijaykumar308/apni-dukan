@@ -1,4 +1,4 @@
-.boxes {
+/* .boxes {
     --size: 32px;
     --duration: 800ms;
     height: calc(var(--size) * 2);
@@ -180,4 +180,4 @@
     100% {
       transform: translate(100%, 100%);
     }
-  }
+  } */
